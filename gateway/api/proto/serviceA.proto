@@ -1,0 +1,15 @@
+syntax = "proto3";
+option java_multiple_files = true;
+option go_package = "service.proto";
+package service.proto;
+import "google/api/annotations.proto";
+
+import "common.proto";
+
+service ServiceA {
+  rpc Ping (service.common.proto.MessagePing) returns (service.common.proto.MessagePong) {
+    option (google.api.http) = {
+      get: "/core/serviceA/ping/{timestamp}"
+    };
+  }
+}

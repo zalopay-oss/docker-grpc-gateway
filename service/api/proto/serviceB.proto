@@ -1,0 +1,10 @@
+syntax = "proto3";
+option java_multiple_files = true;
+option go_package = "service.proto";
+package service.proto;
+
+import "common.proto";
+
+service ServiceB {
+  rpc Ping (service.common.proto.MessagePing) returns (service.common.proto.MessagePong);
+}

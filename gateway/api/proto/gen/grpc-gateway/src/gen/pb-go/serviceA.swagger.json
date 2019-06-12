@@ -1,0 +1,58 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "serviceA.proto",
+    "version": "version not set"
+  },
+  "schemes": [
+    "http",
+    "https"
+  ],
+  "consumes": [
+    "application/json"
+  ],
+  "produces": [
+    "application/json"
+  ],
+  "paths": {
+    "/core/serviceA/ping/{timestamp}": {
+      "get": {
+        "operationId": "Ping",
+        "responses": {
+          "200": {
+            "description": "A successful response.",
+            "schema": {
+              "$ref": "#/definitions/protoMessagePong"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "timestamp",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "format": "int64"
+          }
+        ],
+        "tags": [
+          "ServiceA"
+        ]
+      }
+    }
+  },
+  "definitions": {
+    "protoMessagePong": {
+      "type": "object",
+      "properties": {
+        "timestamp": {
+          "type": "string",
+          "format": "int64"
+        },
+        "serviceName": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

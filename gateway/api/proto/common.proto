@@ -1,0 +1,13 @@
+syntax = "proto3";
+option java_multiple_files = true;
+option go_package = "service.proto";
+package service.common.proto;
+
+message MessagePing {
+  int64 timestamp = 1;
+}
+
+message MessagePong {
+  int64 timestamp = 1;
+  string serviceName = 2;
+}

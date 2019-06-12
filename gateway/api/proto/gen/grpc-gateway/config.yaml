@@ -1,0 +1,12 @@
+backend: "localhost:8000"
+cors:
+  allow-origin: "*"
+  allow-credentials:
+  allow-methods: "POST, GET, OPTIONS, PUT, DELETE"
+  allow-headers: "Accept, Content-Type, Content-Length, Accept-Encoding, X-CSRF-Token, Authorization"
+proxy:
+  port: 9000
+  api-prefix: "/"
+swagger:
+  file: "..swagger.json"
+
