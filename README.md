@@ -38,7 +38,7 @@ Install Docker:
 ## Build
 
 ```sh
-#Clone project
+#clone project
 $ git clone https://github.com/zalopay-oss/docker-grpc-gateway.git
 ```
 
