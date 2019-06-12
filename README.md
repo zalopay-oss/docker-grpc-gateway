@@ -91,4 +91,4 @@ If you find anything wrong or would like to contribute in any way, feel free to 
 ## Acknowledgments
 
 - Thanks [Andy](https://github.com/anhldbk) for supporting me during the implementation project.
-- Thanks [namely/docker-proto](https://github.com/namely/docker-protoc) for the library is great.
+- Thanks [namely/docker-proto](https://github.com/namely/docker-protoc) for the open source is great.
