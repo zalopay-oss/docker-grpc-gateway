@@ -65,7 +65,7 @@ $ cd ./service
 $ docker build -t service-ping .
 
 #run image
-$ docker run  -- network host service-ping
+$ docker run  --network host service-ping
 ```
 
 ## Test
