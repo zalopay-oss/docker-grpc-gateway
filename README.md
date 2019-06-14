@@ -53,7 +53,7 @@ $ cd ./gateway/api/proto/gen/grpc-gateway
 $ docker build -t grpc-gateway .
 
 #run image
-$ docker run - network host grpc-gateway
+$ docker run  --network host grpc-gateway
 ```
 
 - Run service
@@ -65,7 +65,7 @@ $ cd ./service
 $ docker build -t service-ping .
 
 #run image
-$ docker run - network host service-ping
+$ docker run  -- network host service-ping
 ```
 
 ## Test
