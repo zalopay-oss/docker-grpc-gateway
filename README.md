@@ -1,15 +1,15 @@
 # Docker grpc-gateway
 
-- [Docker grpc-gateway](#docker-grpc-gateway)
-  - [Overview](#overview)
-  - [Architecture Demo](#architecture-demo)
-  - [Requirement](#requirement)
-  - [Installation](#installation)
-  - [Build](#build)
-  - [Run](#run)
-  - [Test](#test)
-  - [Contribution](#contribution)
-  - [Acknowledgments](#acknowledgments)
+- [Docker grpc-gateway](#Docker-grpc-gateway)
+  - [Overview](#Overview)
+  - [Architecture Demo](#Architecture-Demo)
+  - [Requirement](#Requirement)
+  - [Installation](#Installation)
+  - [Build](#Build)
+  - [Run](#Run)
+  - [Test](#Test)
+  - [Contribution](#Contribution)
+  - [Acknowledgments](#Acknowledgments)
 
 ## Overview
 
@@ -53,7 +53,7 @@ $ cd ./gateway/api/proto/gen/grpc-gateway
 $ docker build -t grpc-gateway .
 
 #run image
-$ docker run  --network host grpc-gateway
+$ ddocker run  -p 9000:9000 --rm --link service-ping grpc-gateway
 ```
 
 - Run service
@@ -65,7 +65,7 @@ $ cd ./service
 $ docker build -t service-ping .
 
 #run image
-$ docker run  --network host service-ping
+$ docker run  --name service-ping --rm service-ping
 ```
 
 ## Test

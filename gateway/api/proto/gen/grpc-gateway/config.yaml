@@ -1,4 +1,4 @@
-backend: "localhost:8000"
+backend: "service-ping:8000"
 cors:
   allow-origin: "*"
   allow-credentials:
