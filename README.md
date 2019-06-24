@@ -53,7 +53,7 @@ $ cd ./gateway/api/proto/gen/grpc-gateway
 $ docker build -t grpc-gateway .
 
 #run image
-$ ddocker run  -p 9000:9000 --rm --link service-ping grpc-gateway
+$ docker run  -p 9000:9000 --rm --link service-ping grpc-gateway
 ```
 
 - Run service
