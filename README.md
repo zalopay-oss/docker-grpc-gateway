@@ -67,7 +67,10 @@ $ docker build -t service-ping .
 #run image
 $ docker run  --name service-ping --rm service-ping
 ```
-
+Or just use `docker-compose` for above step:
+```shell script
+$ docker-compose up -d --build
+```
 ## Test
 
 - Test ServiceA
