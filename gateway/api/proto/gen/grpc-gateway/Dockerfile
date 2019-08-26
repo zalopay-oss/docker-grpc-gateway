@@ -11,7 +11,7 @@ ENV GOPATH=/app
 COPY . /app/
 
 # Download the go dependencies.
-RUN go get ./...
+RUN go get -v ./...
 
 WORKDIR /app
 

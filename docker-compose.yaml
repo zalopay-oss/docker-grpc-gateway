@@ -1,0 +1,14 @@
+version: '3'
+services:
+  grpc-gateway:
+    build:
+      context: gateway/api/proto/gen/grpc-gateway/
+      dockerfile: Dockerfile
+    image: zalopay-oss/docker-grpc-gateway
+    ports:
+      - 9000:9000
+
+  ping-service:
+    build:
+      context: service
+      dockerfile: Dockerfile
